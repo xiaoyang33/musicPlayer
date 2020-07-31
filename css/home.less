@@ -5,6 +5,9 @@
 a{
   text-decoration: none;
 }
+body{
+  padding-bottom:1.3rem ;
+}
 html{
   font-size: 100px;
 }
@@ -85,6 +88,9 @@ header{
       background-color: #dcf8ff;
       border: .01rem dashed #3699ff;
       box-sizing: border-box;
+      img{
+        width: 1.05rem;
+      }
     }
     span{
       font-size: .28rem;
@@ -125,7 +131,7 @@ header{
   flex-wrap: wrap;
   li{
     margin: .32rem 0 0 0;
-    width: 2.4rem;
+    width: 2.39rem;
     margin-right: .15rem;
     font-size: 0;
     &:nth-child(3n){
@@ -134,6 +140,7 @@ header{
     img{
       display: block;
       width: 2.4rem;
+      height: 2.33rem;
     }
     .word{
       margin-top: .16rem;
@@ -194,14 +201,41 @@ footer{
       display: block;
       height: .44rem;
       width: .44rem;
-      background-size: .44rem;
     }
     .parse{
       background: url(../img/home-img/home-4.png) no-repeat 0 0;
       margin-right: .32rem;
+      background-size: .44rem;
     }
     .list{
       background: url(../img/home-img/home-6.png) no-repeat 0 0;
+      background-size: .44rem;
+    }
+    .small-list{
+      list-style: none;
+      padding: .1rem .2rem;
+      box-sizing: border-box;
+      position: absolute;
+      width: 3.4rem;
+      height: 5rem;
+      top: -5rem;
+      right: -3.4rem;
+      background:#E432AA ;
+      opacity: .8;
+      font-size: .3rem;
+      color: @f;
+      border-top-left-radius: .08rem;
+      overflow-y: scroll;
+      li{
+        overflow: hidden;
+        color: #000;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: .03rem 0;
+        padding: .05rem 0;
+        border-bottom: .01rem solid #ccc;
+      }
     }
   }
 }

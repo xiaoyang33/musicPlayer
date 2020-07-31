@@ -5,6 +5,9 @@
 a {
   text-decoration: none;
 }
+body {
+  padding-bottom: 1.3rem;
+}
 html {
   font-size: 100px;
 }
@@ -83,6 +86,9 @@ header span.active a {
   border: 0.01rem dashed #3699ff;
   box-sizing: border-box;
 }
+.music-nav .nav-item div img {
+  width: 1.05rem;
+}
 .music-nav .nav-item span {
   font-size: 0.28rem;
   margin-top: 0.08rem;
@@ -121,7 +127,7 @@ header span.active a {
 }
 .music-list li {
   margin: 0.32rem 0 0 0;
-  width: 2.4rem;
+  width: 2.39rem;
   margin-right: 0.15rem;
   font-size: 0;
 }
@@ -131,6 +137,7 @@ header span.active a {
 .music-list li img {
   display: block;
   width: 2.4rem;
+  height: 2.33rem;
 }
 .music-list li .word {
   margin-top: 0.16rem;
@@ -189,12 +196,39 @@ footer .right span {
   display: block;
   height: 0.44rem;
   width: 0.44rem;
-  background-size: 0.44rem;
 }
 footer .right .parse {
   background: url(../img/home-img/home-4.png) no-repeat 0 0;
   margin-right: 0.32rem;
+  background-size: 0.44rem;
 }
 footer .right .list {
   background: url(../img/home-img/home-6.png) no-repeat 0 0;
+  background-size: 0.44rem;
+}
+footer .right .small-list {
+  list-style: none;
+  padding: 0.1rem 0.2rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 3.4rem;
+  height: 5rem;
+  top: -5rem;
+  right: -3.4rem;
+  background: #E432AA;
+  opacity: 0.8;
+  font-size: 0.3rem;
+  color: #333333;
+  border-top-left-radius: 0.08rem;
+  overflow-y: scroll;
+}
+footer .right .small-list li {
+  overflow: hidden;
+  color: #000;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0.03rem 0;
+  padding: 0.05rem 0;
+  border-bottom: 0.01rem solid #ccc;
 }

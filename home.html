@@ -27,9 +27,9 @@
   </header>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./img/home-img/home-1.png" alt=""></div>
+        <!-- <div class="swiper-slide"><img src="./img/home-img/home-1.png" alt=""></div>
         <div class="swiper-slide"><img src="./img/home-img/home-2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="./img/home-img/home-3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/home-img/home-3.jpg" alt=""></div> -->
     </div>
     <!-- 如果需要分页器 -->
     <div class="swiper-pagination"></div>
@@ -104,24 +104,17 @@
     </div>
   </div>
   <div class="right">
-    <span class="parse"></span>
+    <span class="parse">
+      <audio src="" id="audio">
+      </audio>
+    </span>
     <span class="list"></span>
+    <ul class="small-list">
+      <li data-src='aa'></li>
+    </ul>
   </div>
 </footer>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/jQuery.js"></script>
 <script src="./js/home.js"></script>
-<script>        
-  const mySwiper = new Swiper('.swiper-container', {
-    loop: true, // 循环模式选项
-    speed: 500,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    autoplay: {
-      delay: 2000
-    },
-
-  })      
-  </script>
 </html>
