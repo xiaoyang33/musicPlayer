@@ -2,9 +2,233 @@
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+body {
+  padding-bottom: 1.3rem;
+}
 html {
   font-size: 100px;
 }
 header {
-  height: 0.9rem;
+  height: 1rem;
+  background: linear-gradient(to right, #169ee3, #9e36d7 60%, #e932a7);
+  padding: 0 0.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.36rem;
+  justify-content: space-between;
+}
+header .left-list {
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  background: url(../img/home-img/home_03.png) no-repeat center 0;
+  background-size: 0.44rem;
+}
+header span {
+  flex: 1;
+  text-align: center;
+}
+header span a {
+  color: #fff;
+}
+header span:nth-child(3) {
+  flex: 3;
+}
+header span:last-child {
+  display: block;
+  background: url(../img/home-img/3@2x.png) no-repeat center 0;
+  height: 0.44rem;
+  width: 0.44rem;
+  background-size: 0.44rem;
+}
+header span.active a {
+  color: #ec32a5;
+  background: url(../img/home-img/home-8.png) no-repeat center bottom;
+}
+/* 设置的小圆点的样式 */
+.swiper-container {
+  height: 4.09rem;
+}
+.swiper-container img {
+  height: 4.09rem;
+}
+.swiper-pagination-bullets span {
+  width: 0.3rem;
+  height: 0.3rem;
+  margin: 0 0.2rem !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ec32a5;
+}
+.music-nav {
+  margin: 0.42rem 0;
+  padding: 0 0.27rem 0 0.2rem;
+  display: flex;
+  border-bottom: 0.01rem solid #e8e8e8;
+}
+.music-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.32rem;
+  margin-right: 0.4rem;
+}
+.music-nav .nav-item:last-child {
+  margin-right: 0;
+}
+.music-nav .nav-item div {
+  width: 1.05rem;
+  height: 1.05rem;
+  background-color: #dcf8ff;
+  border: 0.01rem dashed #3699ff;
+  box-sizing: border-box;
+}
+.music-nav .nav-item div img {
+  width: 1.05rem;
+}
+.music-nav .nav-item span {
+  font-size: 0.28rem;
+  margin-top: 0.08rem;
+  color: #333333;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list h4 {
+  font-size: 0.36rem;
+  color: #333333;
+}
+.nav-list div {
+  width: 50%;
+  font-size: 0.28rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-list div span {
+  margin-right: 0.72rem;
+  display: block;
+  padding-bottom: 0.08rem;
+}
+.nav-list div span:last-child {
+  margin: 0;
+}
+.nav-list div span.active {
+  color: #ec32a5;
+  background: url(../img/home-img/home-7.png) no-repeat center bottom;
+}
+.music-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.music-list li {
+  margin: 0.32rem 0 0 0;
+  width: 2.39rem;
+  margin-right: 0.15rem;
+  font-size: 0;
+}
+.music-list li:nth-child(3n) {
+  margin-right: 0;
+}
+.music-list li img {
+  display: block;
+  width: 2.4rem;
+  height: 2.33rem;
+}
+.music-list li .word {
+  margin-top: 0.16rem;
+  font-size: 0.24rem;
+  padding-left: 0.3rem;
+}
+.music-list li .word p {
+  color: #333333;
+  height: 0.6rem;
+  overflow: hidden;
+}
+.music-list li .word span {
+  font-size: 0.18rem;
+  display: block;
+  margin-top: 0.12rem;
+  color: #999999;
+}
+footer {
+  background: linear-gradient(to right, #169ee3, #9e36d7 60%, #e932a7);
+  height: 1.2rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.34rem;
+  justify-content: space-between;
+  font-size: 0;
+  box-sizing: border-box;
+}
+footer .left {
+  display: flex;
+}
+footer .left .music-img {
+  display: block;
+  width: 0.68rem;
+  height: 0.68rem;
+  background: url(../img/home-img/50@2x.png) no-repeat 0 0;
+  background-size: 0.68rem;
+  margin-right: 0.2rem;
+}
+footer .left div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.24rem;
+  color: #fff;
+}
+footer .left div p:nth-child(2) {
+  margin-top: 0.16rem;
+}
+footer .right {
+  display: flex;
+}
+footer .right span {
+  display: block;
+  height: 0.44rem;
+  width: 0.44rem;
+}
+footer .right .parse {
+  background: url(../img/home-img/home-4.png) no-repeat 0 0;
+  margin-right: 0.32rem;
+  background-size: 0.44rem;
+}
+footer .right .list {
+  background: url(../img/home-img/home-6.png) no-repeat 0 0;
+  background-size: 0.44rem;
+}
+footer .right .small-list {
+  list-style: none;
+  padding: 0.1rem 0.2rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 3.4rem;
+  height: 5rem;
+  top: -5rem;
+  right: -3.4rem;
+  background: #E432AA;
+  opacity: 0.8;
+  font-size: 0.3rem;
+  color: #333333;
+  border-top-left-radius: 0.08rem;
+  overflow-y: scroll;
+}
+footer .right .small-list li {
+  overflow: hidden;
+  color: #000;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0.03rem 0;
+  padding: 0.05rem 0;
+  border-bottom: 0.01rem solid #ccc;
 }
