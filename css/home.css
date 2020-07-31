@@ -33,6 +33,7 @@ header span {
 }
 header span a {
   color: #fff;
+  padding-bottom: 0.1rem;
 }
 header span:nth-child(3) {
   flex: 3;

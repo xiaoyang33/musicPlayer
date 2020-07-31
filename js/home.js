@@ -58,7 +58,7 @@ let newList = {
         </div>
       </li> 
       `
-      // $('.music-list').append(template)
+      $('.music-list').append(template)
     })
   }
 }
@@ -171,8 +171,3 @@ function resize() {
 resize()
 window.onresize = resize;
 
-
-// 轮播图初始化
-setTimeout(()=>{
-   
-},1000)
