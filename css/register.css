@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100px;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 0.26rem;
+}
+button {
+  border: none;
+  outline: none;
+}
+.head_ {
+  width: 100%;
+  overflow: hidden;
+}
+.head_ img {
+  width: 0.26rem;
+  height: 0.4rem;
+  float: left;
+  padding-top: 0.62rem;
+  padding-left: 0.32rem;
+}
+.head_ p {
+  float: right;
+  font-size: 0.28rem;
+  padding-top: 0.7rem;
+  padding-right: 0.35rem;
+}
+.bimg {
+  width: 2.5rem;
+  height: 2.74rem;
+  margin-top: 1.27rem;
+  margin-left: 30%;
+}
+.body_ {
+  width: 94%;
+  text-align: center;
+  padding-left: 0.2rem;
+}
+.body_ .d_ {
+  font-size: 0.26rem;
+  border-bottom: 0.01rem solid #E8E8E8;
+  padding-top: 0.69rem;
+}
+.body_ .d_ #number {
+  position: absolute;
+  top: 0.35rem;
+  left: 6rem;
+  font-size: 0.22rem;
+  color: #f35626;
+  background: coral;
+  background-image: -webkit-linear-gradient(45deg, #EE50B1 0%, #23A3E4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.body_ .di2 {
+  text-align: center;
+  overflow: hidden;
+  font-size: 0.26rem;
+  border-bottom: 0.01rem solid #E8E8E8;
+  padding-top: 0.69rem;
+}
+.body_ .di2 input {
+  margin-left: 1.1rem;
+}
+.body_ .di2 button {
+  font-size: 0.22rem;
+  float: right;
+  color: #f35626;
+  background: coral;
+  background-image: -webkit-linear-gradient(45deg, #EE50B1 0%, #23A3E4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.body_ .di3 {
+  font-size: 0.26rem;
+  border-bottom: 0.01rem solid #E8E8E8;
+  padding-top: 0.69rem;
+  position: relative;
+}
+.body_ .di3 #error {
+  position: absolute;
+  top: 0.35rem;
+  left: 6rem;
+  font-size: 0.22rem;
+  color: #f35626;
+  background: coral;
+  background-image: -webkit-linear-gradient(45deg, #EE50B1 0%, #23A3E4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.login_a {
+  width: 87%;
+  margin-top: 0.66rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.45rem;
+}
+.login_a img {
+  width: 1.02rem;
+  height: 1.02rem;
+}
+.foot {
+  width: 100%;
+  font-size: 0.19rem;
+  color: #999999;
+  text-align: center;
+  padding-bottom: 0.9rem;
+}
