@@ -6,12 +6,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
   <header>
-    
+    <span class="left-list"></span>
+    <span>
+      <a href="">我的</a>
+    </span>
+    <span class="active">
+      <a href="">音乐馆</a>
+    </span>
+    <span>
+      <a href="">发现</a>
+    </span>
+    <span>
 
+    </span>
   </header>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/home-img/home-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/home-img/home-2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/home-img/home-3.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="music-nav">
+  <div class="nav-item">
+    <div>
+      <a href="">
+        <img src="./img/home-img/4@2x.png" alt="">
+      </a>
+    </div>
+    <span>歌手</span>
+  </div>
+  <div class="nav-item">
+    <div>
+      <a href="">
+        <img src="./img/home-img/5@2x.png" alt="">
+      </a>
+    </div>
+    <span>专辑</span>
+  </div>
+  <div class="nav-item">
+    <div>
+      <a href="">
+        <img src="./img/home-img/6@2x.png" alt="">
+      </a>
+    </div>
+    <span>排行</span>
+  </div>
+  <div class="nav-item">
+    <div>
+      <a href="">
+        <img src="./img/home-img/8@2x.png" alt="">
+      </a>
+    </div>
+    <span>歌单</span>
+  </div>
+  <div class="nav-item">
+    <div>
+      <a href="">
+        <img src="./img/home-img/7@2x.png" alt="">
+      </a>
+    </div>
+    <span>电台</span>
+  </div>
+</div>
+  <div class="nav-list">
+    <h4>精选歌单</h4>
+    <div>
+      <span>最新</span>
+      <span class="active">推荐</span>
+    </div>
+  </div>
+  <ul class="music-list">
+    <!-- <li>
+        <img src="./img/home-img/10@2x.png" alt="">
+        <div class="word">
+          <p>轻车上路，一路飙相爱的乌托邦</p>
+        <span>安安静静做自己</span>
+        </div>
+    </li> -->
+  </ul>
 </body>
+<footer>
+  <div class="left">
+    <span class="music-img">
+
+    </span>
+    <div>
+      <p class="music-name">Where Is Your Love</p>
+      <p>横滑可以切换上下首哦</p>
+    </div>
+  </div>
+  <div class="right">
+    <span class="parse"></span>
+    <span class="list"></span>
+  </div>
+</footer>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jQuery.js"></script>
+<script src="./js/home.js"></script>
+<script>        
+  const mySwiper = new Swiper('.swiper-container', {
+    loop: true, // 循环模式选项
+    speed: 500,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 2000
+    },
+
+  })      
+  </script>
 </html>
