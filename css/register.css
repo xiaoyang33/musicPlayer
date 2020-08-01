@@ -46,11 +46,12 @@ button {
   font-size: 0.26rem;
   border-bottom: 0.01rem solid #E8E8E8;
   padding-top: 0.69rem;
+  position: relative;
 }
 .body_ .d_ #number {
   position: absolute;
   top: 0.35rem;
-  left: 6rem;
+  left: 6.1rem;
   font-size: 0.22rem;
   color: #f35626;
   background: coral;
@@ -86,7 +87,7 @@ button {
 .body_ .di3 #error {
   position: absolute;
   top: 0.35rem;
-  left: 6rem;
+  left: 6.1rem;
   font-size: 0.22rem;
   color: #f35626;
   background: coral;
@@ -94,23 +95,39 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.login_a {
-  width: 87%;
-  margin-top: 0.66rem;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2.45rem;
+.lf {
+  position: relative;
 }
-.login_a img {
+.lf .login_a {
+  margin-top: 0.66rem;
+  display: block;
+  margin-bottom: 2.45rem;
   width: 1.02rem;
   height: 1.02rem;
+  background: url(../img/login-img/login-three.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 45%;
+  transform: translateX(-30%);
 }
 .foot {
   width: 100%;
   font-size: 0.19rem;
   color: #999999;
   text-align: center;
-  padding-bottom: 0.9rem;
+  position: absolute;
+  bottom: 0.25rem;
+}
+.alert_ {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 45%;
+  left: 15%;
+  border: 1px solid black;
+  width: 6rem;
+  text-align: center;
+  padding: 0.25rem 0;
+  font-size: 0.6rem;
+  color: red;
 }
